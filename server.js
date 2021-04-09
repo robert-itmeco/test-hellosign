@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
     res.send("Test")
 })
 
+app.post("/callback", (req, res) => {
+    res.send("Hello")
+})
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })
